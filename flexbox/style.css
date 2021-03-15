@@ -1,0 +1,28 @@
+header {
+    height: 50px;
+}
+
+section.ex1 {
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between; /* 余白を均等に配置 */
+}
+
+section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.image {
+    /* width: 150px; */
+}
+
+.text {
+    width: calc(100% - 150px - 50px); /* 幅 - 画像の幅 - 余白 */
+}
+
+.text p {
+    margin: 0;
+    height: 150px;
+    overflow: auto;
+}

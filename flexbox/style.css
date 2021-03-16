@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 header {
     height: 50px;
 }
@@ -13,9 +16,6 @@ section:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-.image {
-    /* width: 150px; */
-}
 
 .text {
     width: calc(100% - 150px - 50px); /* 幅 - 画像の幅 - 余白 */

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+aside {
+    width: 200px;
+    background: yellow;
+    margin: 10px auto;
+}
+
+section {
+    background: yellowgreen;
+    margin: 10px;
+}
+.image {
+    background: red;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.text {
+    background: blue;
+    height: 200px;
+}
+
+@media (min-width: 600px) {
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .image {
+        margin: 0;
+    }
+    .text {
+        width: calc(100% - 200px - 10px);
+    }
+
+    section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width: 800px) {
+    .container {
+        width: 800px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .content {
+        width: calc(100% - 200px - 10px);
+        flex-wrap: wrap;
+    }
+
+}
